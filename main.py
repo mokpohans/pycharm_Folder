@@ -9,6 +9,7 @@ global cli, sshcmdline, cmd, sshcmd
 
 
 def ssh_login(IP, Port, ID, PW):
+    #ssh서버에 접속하기(로그인) 위한 함수
     try:
         global cli
         # paramiko에서 SSHClient 객체를 cli에 생성
@@ -61,7 +62,9 @@ def ssh_cmdwin(win):
 
 
 def files_upload():
+    #파일을 선택하고 ssh서버에 업로드하는 함수
     global cli, ID
+    
     trans = str.maketrans('/', '\\')
     dirt = tk.Tk()
     dirt.withdraw()
