@@ -7,7 +7,7 @@ from tkinter import messagebox
 
 global cli,sshcmdline, cmd, sshcmd, channel,output
 
-
+#https://wikidocs.net/22023 를 참고하여 프로그램 바꾸기
 def ssh_login():
     global cli,channel
     #ssh서버에 접속하기(로그인) 위한 함수
